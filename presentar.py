@@ -22,7 +22,7 @@
 """
 
 import tipoDeDatos as datos
-import operaciones as op
+import calculadora as calc
 import entradaSalida as io
 
 
@@ -39,38 +39,38 @@ def mostrarInterprete():
 
 def mostrarOperaciones():
     delimitar(0)
-    print("Operaciones en Python:")
+    print("Operaciones matemáticas en Python:")
     delimitar(1)
-    num1 = op.obtenerNumero()
-    num2 = op.obtenerNumero()
+    num1 = calc.obtenerNumero()
+    num2 = calc.obtenerNumero()
     print("Números: ",num1," y ",num2)
     delimitar(1)
 
-    op.suma(num1,num2)
+    calc.suma(num1,num2)
     esperarRetorno()
     delimitar(1)
 
-    op.resta(num1,num2)
+    calc.resta(num1,num2)
     esperarRetorno()
     delimitar(1)
 
-    op.producto(num1,num2)
+    calc.producto(num1,num2)
     esperarRetorno()
     delimitar(1)
 
-    op.division(num1,num2)
+    calc.division(num1,num2)
     esperarRetorno()
     delimitar(1)
 
-    op.divisionPiso(num1,num2)
+    calc.divisionPiso(num1,num2)
     esperarRetorno()
     delimitar(1)
 
-    op.modulo(num1,num2)
+    calc.modulo(num1,num2)
     esperarRetorno()
     delimitar(1)
 
-    op.divisionTeorema(num1,num2)
+    calc.divisionTeorema(num1,num2)
     esperarRetorno()
     delimitar(1)
 
@@ -97,7 +97,7 @@ def mostrarDatos():
 
 def mostrarEntrada():
     delimitar(0)
-    print("Entrada en el intérprete de Python:")
+    print("Entradas en el intérprete de Python:")
     delimitar(1)
 
     io.entradaSinCast()
