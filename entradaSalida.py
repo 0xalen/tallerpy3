@@ -17,6 +17,10 @@
 # along with TallerPy3 . If not, see <http://www.gnu.org/licenses/>.
 #
 
+"""
+    Módulo para la presentación de operaciones de entrada y salida básicas.
+"""
+
 def entradaSinCast():
 	print('''   >>> edad= input("Ingrese su edad: ")
 	Ingrese su edad: 18 ''', end='')

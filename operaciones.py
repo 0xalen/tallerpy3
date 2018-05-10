@@ -17,6 +17,11 @@
 # along with TallerPy3 . If not, see <http://www.gnu.org/licenses/>.
 #
 
+"""
+    Módulo para la presentación de operaciones básicas que permiten usar Python
+    como una calculadora.
+"""
+
 from random import randint
 
 def obtenerNumero():

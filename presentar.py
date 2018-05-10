@@ -17,6 +17,10 @@
 # along with TallerPy3 . If not, see <http://www.gnu.org/licenses/>.
 #
 
+"""
+    Módulo para estructurar la presentación de cada contenido temático.
+"""
+
 import tipoDeDatos as datos
 import operaciones as op
 import entradaSalida as io

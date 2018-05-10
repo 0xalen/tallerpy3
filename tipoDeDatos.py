@@ -17,6 +17,10 @@
 # along with TallerPy3 . If not, see <http://www.gnu.org/licenses/>.
 #
 
+"""
+    Módulo para la presentación de tipo de datos.
+"""
+
 def entero():
     print(">>> entero = 1")
     print('>>> type(entero)')

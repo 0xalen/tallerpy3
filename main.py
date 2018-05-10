@@ -17,6 +17,10 @@
 # along with TallerPy3 . If not, see <http://www.gnu.org/licenses/>.
 #
 
+"""
+    Programa principal que organiza el contenido del taller.
+"""
+
 import presentar as pres
 
 if __name__ == '__main__':
