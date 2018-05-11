@@ -24,8 +24,8 @@
 
 from random import randint
 
-def obtenerNumero():
-      return randint(1,99)
+def obtenerNumero(linf, lsup):
+      return randint(linf, lsup)
 
 def suma(num1, num2):
     return ('''Suma (+):
@@ -36,32 +36,32 @@ def resta(num1, num2):
     '''+str(num1)+''' - '''+str(num2)+''' = '''+str(num1-num2))
 
 def producto(num1, num2):
-    return('''Producto (*):
+    return ('''Producto (*):
     '''+str(num1)+''' * '''+str(num2)+''' = '''+str(num1*num2))
 
 def division(num1, num2):
-    return('''División (/):
+    return ('''División (/):
     '''+str(num1)+''' / '''+str(num2)+''' = '''+str(num1/num2))
 
 def divisionPiso(num1, num2):
-    return('''División piso (//):
+    return ('''División piso (//):
     '''+str(num1)+''' // '''+str(num2)+''' = '''+str(num1//num2))
 
 def modulo(num1, num2):
-    return('''Modulo (%):
+    return ('''Modulo (%):
     '''+str(num1)+''' % '''+str(num2)+''' = '''+str(num1%num2))
 
 def divisionTeorema(num1, num2):
-    return('''    DIVIDENDO = DIVISOR * COCIENTE + RESTO
+    return ('''    DIVIDENDO = DIVISOR * COCIENTE + RESTO
     num1 = num2 * (num1 // num2) + num1 % num2
     '''+str(num1)+''' = '''+str(num2)+''' * '''+str(num1//num2)+''' +'''+str(num1%num2))
 
 def potencia(num1, num2):
-    return('''Potencia (**):
+    return ('''Potencia (**):
     '''+str(num1)+''' ** '''+str(num2)+''' = '''+str(num1**num2))
 
 def ordenDeOperaciones(num1, num2):
-    return('''PEMDAS:
+    return ('''PEMDAS:
     * Paréntes
     * Exponentes
     * Multiplicación
