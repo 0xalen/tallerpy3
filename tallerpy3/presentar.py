@@ -46,31 +46,31 @@ def mostrarOperaciones():
     print("Números: ",num1," y ",num2)
     delimitar(1)
 
-    calc.suma(num1,num2)
+    print(calc.suma(num1,num2))
     esperarRetorno()
     delimitar(1)
 
-    calc.resta(num1,num2)
+    print(calc.resta(num1,num2))
     esperarRetorno()
     delimitar(1)
 
-    calc.producto(num1,num2)
+    print(calc.producto(num1,num2))
     esperarRetorno()
     delimitar(1)
 
-    calc.division(num1,num2)
+    print(calc.division(num1,num2))
     esperarRetorno()
     delimitar(1)
 
-    calc.divisionPiso(num1,num2)
+    print(calc.divisionPiso(num1,num2))
     esperarRetorno()
     delimitar(1)
 
-    calc.modulo(num1,num2)
+    print(calc.modulo(num1,num2))
     esperarRetorno()
     delimitar(1)
 
-    calc.divisionTeorema(num1,num2)
+    print(calc.divisionTeorema(num1,num2))
     esperarRetorno()
     delimitar(1)
 
@@ -79,19 +79,19 @@ def mostrarDatos():
     print("Tipos de datos en Python:")
     delimitar(1)
 
-    datos.entero()
+    print(datos.entero())
     esperarRetorno()
     delimitar(1)
 
-    datos.flotante()
+    print(datos.flotante())
     esperarRetorno()
     delimitar(1)
 
-    datos.string()
+    print(datos.string())
     esperarRetorno()
     delimitar(1)
 
-    datos.boolean()
+    print(datos.boolean())
     esperarRetorno()
     delimitar(1)
 
@@ -100,11 +100,11 @@ def mostrarEntrada():
     print("Entradas en el intérprete de Python:")
     delimitar(1)
 
-    io.entradaSinCast()
+    print(io.entradaSinCast())
     esperarRetorno()
     delimitar(1)
 
-    io.entradaConCast()
+    print(io.entradaConCast())
     esperarRetorno()
     delimitar(1)
 

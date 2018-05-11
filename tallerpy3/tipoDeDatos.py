@@ -22,21 +22,21 @@
 """
 
 def entero():
-    print(">>> entero = 1")
-    print('>>> type(entero)')
-    print(" <class 'int'> ")
+    return('''    >>> entero = 1
+    >>> type(entero)
+    <class 'int'> ''')
 
 def flotante():
-    print(">>> flotante = 1.0")
-    print('>>> type(flotante) ')
-    print("<class 'float'> ")
+    return('''    >>> flotante = 1.0
+    >>> type(flotante)
+    <class 'float'>''')
 
 def string():
-    print('>>> string = "Taller Python"')
-    print('''>>> type(string) ''')
-    print('''<class 'str'> ''')
+    return('''    >>> string = "Taller Python"
+    >>> type(string)
+    <class 'str'> ''')
 
 def boolean():
-    print('>>> boolean = True ')
-    print('''>>> type(boolean)''')
-    print('''<class 'bool'>''')
+    return('''    >>> boolean = True
+    >>> type(boolean)
+    <class 'bool'> ''')

@@ -22,17 +22,17 @@
 """
 
 def entradaSinCast():
-	print('''   >>> edad= input("Ingrese su edad: ")
-	Ingrese su edad: 18 ''', end='')
-	print('''   >>> edad + 1 ''', end='')
-	print('''   Traceback (most recent call last):
+	return('''    >>> edad = input("Ingrese su edad: ")
+    Ingrese su edad: 18
+    >>> edad + 1
+    Traceback (most recent call last):
     File "<stdin>", line 1, in <module>
-    TypeError: must be str, not int''', end='')
+    TypeError: must be str, not int ''')
 
 def entradaConCast():
-	print('''   >>> edad= int(input("Ingrese su edad: "))''')
-	print('''   Ingrese su edad: 18''')
-	print('''   >>> type(edad)''')
-	print('''   <class 'int'>''')
-	print('''   >>> edad + 1''')
-	print('   19')
+	return('''    >>> edad= int(input("Ingrese su edad: "))
+    Ingrese su edad: 18
+    >>> type(edad)
+    <class 'int'>
+    >>> edad + 1
+    19''')
