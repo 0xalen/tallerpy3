@@ -24,7 +24,7 @@
 import tipoDeDatos as datos
 import calculadora as calc
 import entradaSalida as io
-
+import cadenasDeCaracteres as cad
 
 def mostrarInterprete():
     delimitar(0)
@@ -41,9 +41,9 @@ def mostrarOperaciones():
     delimitar(0)
     print("Operaciones matemáticas en Python:")
     delimitar(1)
-    num1 = calc.obtenerNumero()
-    num2 = calc.obtenerNumero()
-    print("Números: ",num1," y ",num2)
+    num1 = calc.obtenerNumero(1, 50)
+    num2 = calc.obtenerNumero(1, 50)
+    print("Números aleatoriosle: ",num1," y ",num2)
     delimitar(1)
 
     print(calc.suma(num1,num2))
@@ -105,6 +105,64 @@ def mostrarEntrada():
     delimitar(1)
 
     print(io.entradaConCast())
+    esperarRetorno()
+    delimitar(1)
+
+def mostrarCadenas():
+    delimitar(0)
+    print("Cadenas de caracteres (strings) en Python:")
+    delimitar(1)
+    str1 = cad.obtenerCadena(calc.obtenerNumero(5,10))
+    str2 = cad.obtenerCadena(calc.obtenerNumero(5,10))
+    num3 = calc.obtenerNumero(2,7)
+    print("Cadenas aleatorias: ",str1," y ",str2,"\nNúmero auxiliar: ",num3)
+    delimitar(1)
+
+    print("Comillas simples: ")
+    delimitar(1)
+    print(cad.comillas("'"))
+    esperarRetorno()
+    delimitar(1)
+
+    print("Comillas dobles: ")
+    delimitar(1)
+    print(cad.comillas('"'))
+    esperarRetorno()
+    delimitar(1)
+
+    print("Comillas triples: ")
+    delimitar(1)
+    print(cad.comillasTriples())
+    esperarRetorno()
+    delimitar(1)
+
+    print("Operaciones con cadenas de caracteres: ")
+    delimitar(1)
+
+    print(cad.concatenacion(str1, str2))
+    esperarRetorno()
+    delimitar(1)
+
+    print(cad.repeticion(str1, num3))
+    esperarRetorno()
+    delimitar(1)
+
+    print("Slicing: ")
+    delimitar(1)
+
+    print(cad.slicingLogica())
+    esperarRetorno()
+    delimitar(1)
+
+    print(cad.slicingIndice())
+    esperarRetorno()
+    delimitar(1)
+
+    print(cad.slicingRango())
+    esperarRetorno()
+    delimitar(1)
+
+    print()
     esperarRetorno()
     delimitar(1)
 

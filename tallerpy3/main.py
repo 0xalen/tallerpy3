@@ -29,3 +29,4 @@ if __name__ == '__main__':
     pres.mostrarOperaciones()
     pres.mostrarDatos()
     pres.mostrarEntrada()
+    pres.mostrarCadenas()
