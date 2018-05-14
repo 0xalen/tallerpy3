@@ -108,6 +108,19 @@ def mostrarEntrada():
     esperarRetorno()
     delimitar(1)
 
+def mostrarSalida():
+    delimitar(0)
+    print("Salidas en el intérprete de Python:")
+    delimitar(1)
+
+    print(io.salidaConFormato())
+    esperarRetorno()
+    delimitar(1)
+
+    print(io.salidaSinFormato())
+    esperarRetorno()
+    delimitar(1)
+
 def mostrarCadenas():
     delimitar(0)
     print("Cadenas de caracteres (strings) en Python:")

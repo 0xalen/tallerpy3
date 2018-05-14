@@ -36,3 +36,21 @@ def entradaConCast():
     <class 'int'>
     >>> edad + 1
     19''')
+
+def salidaSinFormato():
+    return('''    >>> numDeAmigos=1000000
+    >>> accion="cantar"
+    >>> print("Yo quiero tener",numDeAmigos,"de amigos")
+    >>> print("y así más fuerte poder",accion)
+    Yo quiero tener 1000000 de amigos
+    y así más fuerte poder cantar
+     ''')
+
+def salidaConFormato():
+    return('''    >>> numDeAmigos=1000000
+    >>> accion="cantar"
+    >>> print("Yo quiero tener %d de amigos \\
+    ... \\ny así más fuerte poder %s" % (numDeAmigos, accion))
+    Yo quiero tener 1000000 de amigos
+    y así más fuerte poder cantar
+     ''')
