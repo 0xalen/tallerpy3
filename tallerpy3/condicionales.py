@@ -38,8 +38,11 @@ def expresiones():
     is not       objeto no igual a''')
 
 def sentenciaIf():
-    return('''    if expresiones :
+    return('''    Intrucción:
+    if expresiones :
         Hacer algo
+    
+    Ejemplo:    
     if age >= 16:
         print("Podes Votar!, pero no ir preso!")''')
 
