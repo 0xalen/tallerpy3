@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 #
 # Copyright 2018 Alejandro Trinidad <franco.unpa@protonmail.com>
+#                Franco Herrera <fherrera@uarg.unpa.edu.ar>
 #
 # TallerPy3 is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -21,16 +22,54 @@
     Módulo para la presentación de operaciones básicas con listas en Python.
 """
 
-import random
 import string
 
-def obtenerListas():
-    interpretados = ['Python', 'R', 'Julia', 'OTcl', 'Lua', 'AWK', 'Lisp']
-    compilados = ['C', 'C++', 'Pascal', 'Java', 'Ruby', 'Perl']
+def crearLista():
+    return('''    Crear lista vacía:
+    lista = list()
+    ó
+    lista = []
+
+    Crear lista con elementos:
     infoSecEvents = [ 'Operation Aurora', 'Stuxnet', 'Heartbleed', 'Sony Hack', \
-        'Ashley Madison', 'Mirai', 'Cloudbleed', 'Dirty COW', 'WannaCry', 'Petya',\
-        'EternalBlue', 'Equifax', 'Spectre', 'Meltdown']
-    return [interpretados, compilados, infoSecEvents]
+'Ashley Madison', 'Mirai', 'Cloudbleed', 'Dirty COW', 'WannaCry', 'Petya',\
+'EternalBlue', 'Equifax']
+    ''')
+
+def insercion():
+    return('''    Con append:
+    >>> infoSecEvents.append('Spectre')
+    >>> infoSecEvents
+    ['Operation Aurora', 'Stuxnet', 'Heartbleed', 'Sony Hack', 'Ashley Madison', 'Mirai', 'Cloudbleed', 'Dirty COW', 'WannaCry', 'Petya', 'EternalBlue', 'Equifax', 'Spectre']
+
+    Con insert:
+    >>> infoSecEvents.insert(13,'Meltdwn')
+    >>> infoSecEvents
+    ['Operation Aurora', 'Stuxnet', 'Heartbleed', 'Sony Hack', 'Ashley Madison', 'Mirai', 'Cloudbleed', 'Dirty COW', 'WannaCry', 'Petya', 'EternalBlue', 'Equifax', 'Spectre', 'Meltdwn']
+    ''')
+def eliminacion():
+    return('''    Con del:
+    >>> del infoSecEvents[13]
+    >>> infoSecEvents
+    ['Operation Aurora', 'Stuxnet', 'Heartbleed', 'Sony Hack', 'Ashley Madison', 'Mirai', 'Cloudbleed', 'Dirty COW', 'WannaCry', 'Petya', 'EternalBlue', 'Equifax', 'Spectre']
+
+    Con remove:
+    >>> infoSecEvents.remove('Operation Aurora')
+    >>> infoSecEvents
+    ['Stuxnet', 'Heartbleed', 'Sony Hack', 'Ashley Madison', 'Mirai', 'Cloudbleed', 'Dirty COW', 'WannaCry', 'Petya', 'EternalBlue', 'Equifax', 'Spectre', 'Meltdown']
+    ''')
+
+def ordenamiento():
+    return('''    Con sort:
+    >>> cosas = [1, 'abc', 'Python', "2"]
+    >>> cosas.sort()
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    TypeError: '<' not supported between instances of 'str' and 'int'
+    >>> cosas.sort(key=str)
+    >>> cosas
+    [1, '2', 'Python', 'abc']
+    ''')
 
 def concatenacion(l1, l2):
     return ('''    Concatenación (+):
