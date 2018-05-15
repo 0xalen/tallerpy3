@@ -2,7 +2,6 @@
 # -*- coding:utf-8 -*-
 #
 # Copyright 2018 Franco Herrera <fherrera@uarg.unpa.edu.ar>
-#				 Alejandro Trinidad <franco.unpa@protonmail.com>
 #
 # TallerPy3 is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
