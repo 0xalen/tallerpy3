@@ -25,6 +25,8 @@ import tipoDeDatos as datos
 import calculadora as calc
 import entradaSalida as io
 import cadenasDeCaracteres as cad
+import listas as li
+import bucles as bu
 
 def mostrarInterprete():
     delimitar(0)
@@ -176,6 +178,55 @@ def mostrarCadenas():
     delimitar(1)
 
     print()
+    esperarRetorno()
+    delimitar(1)
+
+def mostrarListas():
+    delimitar(0)
+    print("Listas en Python:")
+    delimitar(1)
+
+    l1 = li.obtenerListas()[0]
+    l2 = li.obtenerListas()[1]
+    l3 = li.obtenerListas()[2]
+    num4 = calc.obtenerNumero(2,7)
+
+    print("Listas: \nl1: ",l1,"\nl2 = ",l2,"\nl3 = ",l3,"\nNúmero auxiliar: ",num4)
+    delimitar(1)
+
+    print("Operaciones con listas: ")
+    delimitar(1)
+
+    print(li.concatenacion(l1, l2))
+    esperarRetorno()
+    delimitar(1)
+
+    print(li.repeticion(l1, num4))
+    esperarRetorno()
+    delimitar(1)
+
+    print("Slicing: ")
+    delimitar(1)
+
+    print(li.slicingIndice())
+    esperarRetorno()
+    delimitar(1)
+
+    print(li.slicingRango())
+    esperarRetorno()
+    delimitar(1)
+
+def mostrarBucles():
+    delimitar(0)
+    print("Iteración en Python:")
+    delimitar(1)
+
+    print(bu.ejemploWhile())
+    esperarRetorno()
+    delimitar(1)
+
+
+    print(bu.ejemploFor())
     esperarRetorno()
     delimitar(1)
 
