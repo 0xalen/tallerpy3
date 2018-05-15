@@ -38,7 +38,7 @@ def expresiones():
 
 def sentenciaIf():
     return('''    Intrucción:
-    if expresiones :
+    if condiciones:
         Hacer algo
     
     Ejemplo:    
@@ -46,7 +46,7 @@ def sentenciaIf():
         print("Podes Votar!, pero no ir preso!")''')
 
 def sentenciaIfElifElse():
-    return('''    if expresiones:
+    return('''    if condiciones:
 		hacer algo
     elif condiciones:
         hacer otra cosa
