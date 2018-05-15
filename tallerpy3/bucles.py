@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 #
 # Copyright 2018 Alejandro Trinidad <franco.unpa@protonmail.com>
+#                Franco Herrera <fherrera@uarg.unpa.edu.ar>
 #
 # TallerPy3 is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -22,8 +23,31 @@
     que permiten iteración.
 """
 
+def estructuraWhile():
+    return('''    Estructura:
+    while condiciones:
+        repetir algo
+    ''')
+
 def ejemploWhile():
-    return('''    Instrucciones:
+    return('''    Ejemplo 1: Contador
+    	contador = 0
+    	while contador =< 5:
+    	    print(contador)
+    	    contador += 1 		# Equivalente a "contador = contador + 1"
+    Salida:
+    0
+    1
+    2
+    3
+    4
+    5
+
+    # <COMPLETAR>
+    # break
+    # continue
+
+    Ejemplo 2: Fibonacci
     num1, num2 = 0, 1
 
     while b < 100:
@@ -32,6 +56,12 @@ def ejemploWhile():
 
     Salida:
         1,1,2,3,5,8,13,21,34,55,89
+    ''')
+
+def estructuraFor():
+    return('''    Estructura
+    for i in range(comienzo, final, paso):
+    	repetir algo
     ''')
 
 def ejemploFor():
