@@ -22,11 +22,6 @@
     como una calculadora.
 """
 
-from random import randint
-
-def obtenerNumero(linf, lsup):
-      return randint(linf, lsup)
-
 def suma(num1, num2):
     return ('''Suma (+):
     '''+str(num1)+''' + '''+str(num2)+''' = '''+str(num1 + num2))

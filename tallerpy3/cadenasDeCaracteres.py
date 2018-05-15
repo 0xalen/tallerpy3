@@ -22,13 +22,6 @@
     en Python.
 """
 
-import random
-import string
-
-def obtenerCadena(numeroDecaracteres):
-    s = ''.join([random.choice(string.ascii_letters + string.punctuation + string.digits) for n in range(numeroDecaracteres)])
-    return s
-
 def comillas(c):
     return ('''    Instrucción:
         print('''+c+'''Un anillo para gobernarlos a todos, \\
