@@ -22,11 +22,13 @@
     Módulo para estructurar la presentación de cada contenido temático.
 """
 
+import generadorDeDatos as gen
 import tipoDeDatos as datos
 import calculadora as calc
 import entradaSalida as io
 import cadenasDeCaracteres as cad
 import listas as li
+import tuplas as tup
 import condicionales as con
 import bucles as bu
 
@@ -45,8 +47,8 @@ def mostrarOperaciones():
     delimitar(0)
     print("Operaciones matemáticas en Python:")
     delimitar(1)
-    num1 = calc.obtenerNumero(1, 50)
-    num2 = calc.obtenerNumero(1, 50)
+    num1 = gen.obtenerNumero(1, 50)
+    num2 = gen.obtenerNumero(1, 50)
     print("Números aleatoriosle: ",num1," y ",num2)
     delimitar(1)
 
@@ -129,9 +131,9 @@ def mostrarCadenas():
     delimitar(0)
     print("Cadenas de caracteres (strings) en Python:")
     delimitar(1)
-    str1 = cad.obtenerCadena(calc.obtenerNumero(5,10))
-    str2 = cad.obtenerCadena(calc.obtenerNumero(5,10))
-    num3 = calc.obtenerNumero(2,7)
+    str1 = gen.obtenerCadena(gen.obtenerNumero(5,10))
+    str2 = gen.obtenerCadena(gen.obtenerNumero(5,10))
+    num3 = gen.obtenerNumero(2,7)
     print("Cadenas aleatorias: ",str1," y ",str2,"\nNúmero auxiliar: ",num3)
     delimitar(1)
 
@@ -188,12 +190,28 @@ def mostrarListas():
     print("Listas en Python:")
     delimitar(1)
 
-    l1 = li.obtenerListas()[0]
-    l2 = li.obtenerListas()[1]
-    l3 = li.obtenerListas()[2]
-    num4 = calc.obtenerNumero(2,7)
+    l1 = gen.obtenerListas()[0]
+    l2 = gen.obtenerListas()[1]
+    l3 = gen.obtenerListas()[2]
+    num4 = gen.obtenerNumero(2,7)
 
     print("Listas: \nl1: ",l1,"\nl2 = ",l2,"\nl3 = ",l3,"\nNúmero auxiliar: ",num4)
+    delimitar(1)
+
+    print(li.crearLista())
+    esperarRetorno()
+    delimitar(1)
+
+    print(li.insercion())
+    esperarRetorno()
+    delimitar(1)
+
+    print(li.eliminacion())
+    esperarRetorno()
+    delimitar(1)
+
+    print(li.ordenamiento())
+    esperarRetorno()
     delimitar(1)
 
     print("Operaciones con listas: ")
@@ -215,6 +233,46 @@ def mostrarListas():
     delimitar(1)
 
     print(li.slicingRango())
+    esperarRetorno()
+    delimitar(1)
+
+def mostrarTuplas():
+    delimitar(0)
+    print("Tuplas en Python:")
+    delimitar(1)
+
+    t1 = gen.obtenerTuplas()[0]
+    t2 = gen.obtenerTuplas()[1]
+    t3 = gen.obtenerTuplas()[2]
+    num5 = gen.obtenerNumero(2,7)
+
+    # CREAR MÓDULO PARA GENERAR COSAS
+    print("Tuplas: \nt1: ",t1,"\nt2 = ",t2,"\nt3 = ",t3,"\nNúmero auxiliar: ",num5)
+    delimitar(1)
+
+    print(tup.crearTupla())
+    esperarRetorno()
+    delimitar(1)
+
+    print("Operaciones con tuplas: ")
+    delimitar(1)
+
+    print(tup.concatenacion(t1, t2))
+    esperarRetorno()
+    delimitar(1)
+
+    print(tup.repeticion(t1, num5))
+    esperarRetorno()
+    delimitar(1)
+
+    print("Slicing: ")
+    delimitar(1)
+
+    print(tup.slicingIndice())
+    esperarRetorno()
+    delimitar(1)
+
+    print(tup.slicingRango())
     esperarRetorno()
     delimitar(1)
 
@@ -240,7 +298,15 @@ def mostrarBucles():
     print("Iteración en Python:")
     delimitar(1)
 
+    print(bu.estructuraWhile())
+    esperarRetorno()
+    delimitar(1)
+
     print(bu.ejemploWhile())
+    esperarRetorno()
+    delimitar(1)
+
+    print(bu.estructuraFor())
     esperarRetorno()
     delimitar(1)
 

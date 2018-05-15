@@ -31,7 +31,28 @@ if __name__ == '__main__':
     pres.mostrarDatos()
     pres.mostrarEntrada()
     pres.mostrarSalida()
+    # Trabajo con scripts (IDE) -> Diapositiva
+        # python
+        # bpython
+        # IDLE
+        # Eric
+        # Ninja
+        # Spyder
+        # PyChan
+        # IDE generales: Eclipse, Geany, Builder, Notepad++, Sublime, Atom,...
+
     pres.mostrarCadenas()
-    pres.mostrarListas()
     pres.mostrarCondicionales()
     pres.mostrarBucles()
+    pres.mostrarListas()
+    pres.mostrarTuplas()
+    # Aclaración: qué pasa si intentamos agregar elementos a la tupla
+    # Conjuntos: mostrar en intérprete
+    # diccionarios
+    # funciones
+    # Exepciones
+    # I/O archivos
+    # Clases (Objetos, herencia)
+    # Uso de librerías
+    # Paquetes y módulos
+    
