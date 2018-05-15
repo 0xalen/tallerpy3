@@ -86,9 +86,9 @@ def slicingIndice():
         'P'
         >>> cadena[5]
         'n'
-        >>> cadena[0]
-        'P'
         >>> cadena[-6]
+        'P'
+        >>> cadena[-1]
         'n'
         >>> cadena[6]
         Traceback (most recent call last):
