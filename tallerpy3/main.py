@@ -32,4 +32,5 @@ if __name__ == '__main__':
     pres.mostrarSalida()
     pres.mostrarCadenas()
     pres.mostrarListas()
+    pres.mostrarCondicionales()
     pres.mostrarBucles()

@@ -26,6 +26,7 @@ import calculadora as calc
 import entradaSalida as io
 import cadenasDeCaracteres as cad
 import listas as li
+import condicionales as con
 import bucles as bu
 
 def mostrarInterprete():
@@ -216,6 +217,23 @@ def mostrarListas():
     esperarRetorno()
     delimitar(1)
 
+def mostrarCondicionales():
+    delimitar(0)
+    print("Condicionales en Python: ")
+    delimitar(1)
+
+    print(con.expresiones())
+    esperarRetorno()
+    delimitar(1)
+	
+    print(con.sentenciaIf())
+    esperarRetorno()
+    delimitar(1)
+	
+    print(con.sentenciaIfElifElse())
+    esperarRetorno()
+    delimitar(1)
+
 def mostrarBucles():
     delimitar(0)
     print("Iteración en Python:")
@@ -224,7 +242,6 @@ def mostrarBucles():
     print(bu.ejemploWhile())
     esperarRetorno()
     delimitar(1)
-
 
     print(bu.ejemploFor())
     esperarRetorno()
