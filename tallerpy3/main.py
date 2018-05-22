@@ -48,8 +48,8 @@ if __name__ == '__main__':
     pres.mostrarTuplas()
     # Aclaración: qué pasa si intentamos agregar elementos a la tupla
     # Conjuntos: mostrar en intérprete
-    # diccionarios
-    # funciones
+    pres.mostrarDiccionarios()
+    pres.mostrarFunciones()
     # Exepciones
     # I/O archivos
     # Clases (Objetos, herencia)

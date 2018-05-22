@@ -31,6 +31,8 @@ import listas as li
 import tuplas as tup
 import condicionales as con
 import bucles as bu
+import diccionarios as dic
+import funciones as f
 
 def mostrarInterprete():
     delimitar(0)
@@ -311,6 +313,82 @@ def mostrarBucles():
     delimitar(1)
 
     print(bu.ejemploFor())
+    esperarRetorno()
+    delimitar(1)
+
+def mostrarDiccionarios():
+    delimitar(0)
+    print("Diccionarios en Python:")
+    delimitar(1)
+
+    print(dic.crearDiccionario())
+    esperarRetorno()
+    delimitar(1)
+
+    print(dic.mostrarDiccionario())
+    esperarRetorno()
+    delimitar(1)
+
+    print(dic.agregarElementos())
+    esperarRetorno()
+    delimitar(1)
+
+    print(dic.obtenerElementos())
+    esperarRetorno()
+    delimitar(1)
+
+    print(dic.modificarElementos())
+    esperarRetorno()
+    delimitar(1)
+
+    print(dic.eliminarElementos())
+    esperarRetorno()
+    delimitar(1)
+
+    print(dic.recorrerDiccionario())
+    esperarRetorno()
+    delimitar(1)
+
+    print(dic.mostrarFuncionesDic())
+    esperarRetorno()
+    delimitar(1)
+
+def mostrarFunciones():
+    delimitar(0)
+    print("Funciones en Python:")
+    delimitar(1)
+
+    print(f.estructuraFuncion())
+    esperarRetorno()
+    delimitar(1)
+
+    print(f.definirFuncion())
+    esperarRetorno()
+    delimitar(1)
+
+    print(f.invocarFuncion())
+    esperarRetorno()
+    delimitar(1)
+
+    print(f.pasarArgumentosSimple())
+    esperarRetorno()
+    delimitar(1)
+
+    print(f.parametrosPorDefecto())
+    esperarRetorno()
+    delimitar(1)
+
+    print(f.pasarArgumentos())
+    esperarRetorno()
+    delimitar(1)
+
+
+def mostrarExcepcioneS():
+    print()
+    esperarRetorno()
+    delimitar(1)
+
+    print()
     esperarRetorno()
     delimitar(1)
 
