@@ -30,7 +30,7 @@ def crearTupla():
     ó
     tupla = ()
 
-    Crear lista con 1 elemento:
+    Crear tupla con 1 elemento:
     >>> tupla = ([1])
     >>> tupla = (1,)
     >>> tupla = 1,
